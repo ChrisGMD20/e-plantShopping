@@ -32,7 +32,7 @@ function App() {
 
       </div>
       <div className={`product-list-container ${showProductList ? 'visible' : ''}`}>
-        <ProductList />
+        <ProductList handleGetStarted={setShowProductList} />
       </div>
     </div>
   );

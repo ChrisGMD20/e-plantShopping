@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./ProductList.css";
 import { useDispatch, useSelector } from "react-redux";
 import { addItem, removeItem, updateQuantity } from "./CartSlice";
-function ProductList() {
+function ProductList({handleGetStarted}) {
   const plantsArray = [
     {
       category: "Air Purifying Plants",
@@ -326,7 +326,7 @@ function ProductList() {
               src="https://cdn.pixabay.com/photo/2020/08/05/13/12/eco-5465432_1280.png"
               alt=""
             />
-            <a href="https://chrisgmd20.github.io/e-plantShopping/" style={{ textDecoration: "none" }}>
+            <a onClick={()=>handleGetStarted(false)} href="https://chrisgmd20.github.io/e-plantShopping/" style={{ textDecoration: "none" }}>
               <div>
                 <h3 style={{ color: "white" }}>Paradise Nursery</h3>
                 <i style={{ color: "white" }}>Where Green Meets Serenity</i>
@@ -337,7 +337,7 @@ function ProductList() {
         <div style={styleObjUl}>
           <div>
             {" "}
-            <a href="https://chrisgmd20.github.io/e-plantShopping/" style={styleA}>
+            <a onClick={()=>handleGetStarted(false)} href="https://chrisgmd20.github.io/e-plantShopping/" style={styleA}>
               Plants
             </a>
           </div>
