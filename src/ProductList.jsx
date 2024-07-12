@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./ProductList.css";
 import { useDispatch, useSelector } from "react-redux";
-import { addItem, removeItem, updateQuantity } from "./CreatSlice";
+import { addItem, removeItem, updateQuantity } from "./CartSlice";
 function ProductList() {
   const plantsArray = [
     {
