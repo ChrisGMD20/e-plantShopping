@@ -337,7 +337,7 @@ function ProductList() {
         <div style={styleObjUl}>
           <div>
             {" "}
-            <a href="#" style={styleA}>
+            <a href="https://chrisgmd20.github.io/e-plantShopping/" style={styleA}>
               Plants
             </a>
           </div>
